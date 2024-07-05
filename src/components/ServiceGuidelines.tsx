@@ -1,3 +1,4 @@
+import { Montserrat } from "next/font/google";
 import React from "react";
 import { AiFillDollarCircle } from "react-icons/ai";
 import { FaFileSignature, FaIdCard } from "react-icons/fa";
@@ -5,6 +6,8 @@ import { FaPeopleGroup } from "react-icons/fa6";
 import { GiStrong } from "react-icons/gi";
 import { IoDocumentAttachSharp, IoDocuments } from "react-icons/io5";
 import { MdWork } from "react-icons/md";
+const mont = Montserrat({ subsets: ["latin"] });
+
 const ServiceGuidelines = () => {
   const items = [
     {
@@ -51,7 +54,7 @@ const ServiceGuidelines = () => {
   return (
     <section className="py-16 px-4 ">
       <div className=" md:text-center ">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-black">
+        <h2 className={`text-4xl md:text-5xl font-extrabold mb-8 text-black ${mont.className}`}>
           Notary Service Guidelines
         </h2>
         <p className="text-xl md:text-2xl mb-8 text-black">

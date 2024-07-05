@@ -1,4 +1,6 @@
+import { Montserrat } from "next/font/google";
 import React from "react";
+const mont = Montserrat({ subsets: ["latin"] });
 
 const WhyUs = () => {
   const items = [
@@ -25,8 +27,8 @@ const WhyUs = () => {
   ];
   return (
     <section className="py-24 px-4 bg-gray-800 text-white">
-      <div className="container mx-auto text-center ">
-        <h2 className="text-3xl md:text-5xl font-extrabold md:mb-8 pb-10">
+      <div className="md:container px-2 mx-auto text-center ">
+        <h2 className={`${mont.className} text-3xl md:text-5xl font-extrabold md:mb-8 pb-10`}>
           Why Choose Us?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 *:bg-opacity-80">

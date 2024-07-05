@@ -1,5 +1,7 @@
+import { Montserrat } from 'next/font/google';
 import React from 'react'
 import { TiTick } from 'react-icons/ti';
+const mont = Montserrat({ subsets: ["latin"] });
 
 const Commonly = () => {
     const items = [
@@ -32,9 +34,9 @@ const Commonly = () => {
         <img  className="p-5" src="/img1.png"/>
         </div>
 
-        <section className="container mx-auto py-8 px-4">
+        <section className="container mx-auto md:py-8 px-4">
             <div className="bg-white rounded-lg shadow-lg p-8">
-                <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900">Commonly Notarized Documents</h2>
+                <h2 className={`text-3xl md:text-5xl font-bold mb-6 text-gray-900 ${mont.className}`}>Commonly Notarized Documents</h2>
                 <ul className="list-none space-y-4 grid md:grid-cols-2 gap-x-3">
                     {items.map((item, index) => {
                         return (

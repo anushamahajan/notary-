@@ -18,8 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <div className="fixed bottom-10 right-10 z-10 bg-white rounded-full p-1 animate-bounce h-10 w-10">
-      <IoIosCall className="h-full w-full" />
-
+        <IoIosCall className="h-full w-full" />
       </div>
       <body className={`${inter.className} app-scrollbar`}>{children}</body>
     </html>

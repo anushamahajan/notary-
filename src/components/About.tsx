@@ -1,4 +1,6 @@
+import { Montserrat } from "next/font/google";
 import React from "react";
+const mont = Montserrat({ subsets: ["latin"] });
 
 const About = () => {
   const about = [
@@ -39,11 +41,11 @@ const About = () => {
   return (
     <section className="flex py-16 px-6 gap-4 items-center  flex-col md:flex-row">
       <section className="grid items-center justify-center pb-4">
-        <div className="space-y-5 container mx-auto text-center font-montserrat">
-          <h2 className=" md:text-5xl text-5xl font-bold text-[#001f3f] mb-8 text-center">
+        <div className="space-y-5 md:container px-2 mx-auto text-center font-montserrat">
+          <h2 className={`md:text-5xl text-5xl font-bold text-[#001f3f] mb-8 text-center ${mont.className}`}>
             About Us
           </h2>
-          <p className="text-lg  mb-6 pyc-4 md:text-center text-justify">
+          <p className="text-lg  mb-6 pyc-4 md:text-center text-left">
             We are a team of Notary Publics appointed by the Governor of
             Florida, authorized to perform notarizing acts in accordance with
             Florida state laws. Our qualifications as Notary Publics and
@@ -64,7 +66,7 @@ const About = () => {
                   key={index}
                   className={`p-6 rounded-lg shadow-lg text-left`}
                 >
-                  <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
+                  <h3 className={`text-2xl font-bold mb-2 ${mont.className}`}>{item.title}</h3>
                   <p>{item.content}</p>
                 </div>
               );

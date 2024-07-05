@@ -1,4 +1,6 @@
+import { Montserrat } from "next/font/google";
 import React from "react";
+const mont = Montserrat({ subsets: ["latin"] });
 
 const Promise = () => {
   const items = [
@@ -17,7 +19,7 @@ const Promise = () => {
 
       <section className="grid items-center justify-center pb-4 ">
         <div className="space-y-5 md:container px-4 mx-auto md:text-center font-montserrat ">
-          <h2 className="text-3xl font-bold  ">
+          <h2 className={`text-3xl font-bold ${mont.className}`}>
             Our Promise to the Community & State
           </h2>
           <p className="text-lg">
