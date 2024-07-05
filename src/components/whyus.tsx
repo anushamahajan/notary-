@@ -31,7 +31,7 @@ const WhyUs = () => {
         <h2 className={`${mont.className} text-3xl md:text-5xl font-extrabold md:mb-8 `}>
           Why Choose Us?
         </h2>
-        <div className="h-2 md:w-[350px] w-[200px] bg-blue-500 mx-auto relative -top-4 mb-5 py-0"/>
+        <div className="h-2 md:w-[350px] w-[200px] bg-blue-500 mx-auto relative md:-top-4 mt-3 md:mt-0 mb-8 md:mb-5 py-0"/>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 *:bg-opacity-80">
           {items.map((item, index) => {

@@ -47,7 +47,7 @@ export default function Home() {
             {" "}
             Notary Services in Broward & Palm Beach County
           </h2>
-          <div className="h-2 md:w-[500px] w-[200px] bg-blue-500 mx-auto relative mb-8 mt-2 py-0"/>
+          <div className="h-2 md:w-[500px] w-[200px] bg-blue-500 md:mx-auto relative mb-8 mt-2 py-0"/>
 
           <p className="text-lg md:text-xl mb-8">
             Serving Broward & Palm Beach County, we set the industry benchmark

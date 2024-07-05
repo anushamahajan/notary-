@@ -57,7 +57,7 @@ const ServiceGuidelines = () => {
         <h2 className={`text-4xl md:text-5xl font-extrabold  text-black ${mont.className}`}>
           Notary Service Guidelines
         </h2>
-        <div className="h-2 md:w-[500px] w-[200px] bg-blue-500 mx-auto relative mb-8 mt-2 py-0"/>
+        <div className="h-2 md:w-[500px] w-[200px] bg-blue-500 md:mx-auto  relative mb-8 mt-2 py-0"/>
 
         <p className="text-xl md:text-2xl mb-8 text-black">
           We are bonded and insured for your protection. Please follow these
