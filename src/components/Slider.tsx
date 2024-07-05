@@ -10,10 +10,12 @@ const Sliderss = () => {
   return (
     <>
       <h2
-        className={`md:text-4xl text-4xl font-bold text-[#001f3f] mb-8 text-center ${mont.className}`}
+        className={`md:text-4xl text-4xl font-bold text-[#001f3f] text-center ${mont.className}`}
       >
         Industry Resources
       </h2>
+      <div className="h-2 md:w-[300px] w-[200px] bg-blue-500 mx-auto relative mb-8 mt-2 py-0"/>
+
       <Swiper
         breakpoints={{
           768: {

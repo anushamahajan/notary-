@@ -16,19 +16,20 @@ export default function Home() {
       <Navbar />
       <div className="h-screen relative ">
         <img
-          className="brightness-[45%] opacity-100 h-full w-full object-cover"
+          className=" opacity-100 h-full w-full object-cover"
           src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         />
+        <div className="absolute top-0 h-full w-full z-10 bg-blue-950/55"/>
         <div className=" absolute flex flex-col gap-7 justify-center md:items-center z-10 h-full w-full top-0 px-5 md:text-center  ">
           <h2
             className={`text-white text-5xl md:text-8xl font-bold ${mont.className} `}
           >
             ASAP MOBILE NOTARY{" "}
           </h2>
-          <div className=" poppins-medium text-3xl md:text-4xl text-gray-100">
+          <div className=" poppins-medium text-3xl md:text-4xl rounded-md text-white">
             Your Trusted Notary Publics and Process Services
           </div>
-          <Button size={"lg"} className="text-xl w-fit bg-white text-black">
+          <Button size={"lg"} className="text-xl w-fit bg-blue-300 text-black font-semibold hover:bg-white">
             Contact ASAP
           </Button>
         </div>
@@ -41,11 +42,13 @@ export default function Home() {
       <section className="py-16 px-4">
         <div className="container mx-auto md:text-center">
           <h2
-            className={`text-3xl md:text-4xl font-bold mb-8 ${mont.className}`}
+            className={`text-3xl md:text-4xl font-bold  ${mont.className}`}
           >
             {" "}
             Notary Services in Broward & Palm Beach County
           </h2>
+          <div className="h-2 md:w-[500px] w-[200px] bg-blue-500 mx-auto relative mb-8 mt-2 py-0"/>
+
           <p className="text-lg md:text-xl mb-8">
             Serving Broward & Palm Beach County, we set the industry benchmark
             by offering affordable notary services right at your doorstep. Join
