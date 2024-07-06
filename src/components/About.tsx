@@ -45,7 +45,7 @@ const About = () => {
           <h2 className={`md:text-5xl text-5xl font-bold text-[#001f3f] text-center ${mont.className}`}>
             About Us
           </h2>
-          <div className="h-2 w-[200px] bg-blue-500 mx-auto relative -top-2"/>
+          <div className="h-2 w-[200px] bg-[#3AAFA9] mx-auto relative -top-2"/>
           <p className="text-lg  mb-6 pyc-4 md:text-center text-left">
             We are a team of Notary Publics appointed by the Governor of
             Florida, authorized to perform notarizing acts in accordance with
@@ -65,7 +65,7 @@ const About = () => {
               return (
                 <div
                   key={index}
-                  className={`p-6 rounded-lg shadow-lg text-left border-blue-400 border-2`}
+                  className={`p-6 rounded-lg shadow-lg text-left border-[#3aafa9] border-2`}
                 >
                   <h3 className={`text-2xl font-bold mb-2 ${mont.className}`}>{item.title}</h3>
                   <p>{item.content}</p>

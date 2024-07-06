@@ -57,7 +57,7 @@ const ServiceGuidelines = () => {
         <h2 className={`text-4xl md:text-5xl font-extrabold  text-black ${mont.className}`}>
           Notary Service Guidelines
         </h2>
-        <div className="h-2 md:w-[500px] w-[200px] bg-blue-500 md:mx-auto  relative mb-8 mt-2 py-0"/>
+        <div className="h-2 md:w-[500px] w-[200px] bg-[#3AAFA9] md:mx-auto  relative mb-8 mt-2 py-0"/>
 
         <p className="text-xl md:text-2xl mb-8 text-black">
           We are bonded and insured for your protection. Please follow these
@@ -68,8 +68,8 @@ const ServiceGuidelines = () => {
             return (
               <div key={index} className="px-2 py-5 md:p-5  items-center space-y-2 ">
                 <div className="flex gap-4 items-center">
-                  <div className="h-full *:w-10 *:h-10 *:text-blue-600">{item.icon}</div>
-                  <h3 className="text-2xl md:text-2xl font-bold text-blue-600">
+                  <div className="h-full *:w-10 *:h-10 *:text-[#3aafa9]">{item.icon}</div>
+                  <h3 className="text-2xl md:text-2xl font-bold text-[#3aafa9]">
                     {item.title}
                   </h3>
                 </div>

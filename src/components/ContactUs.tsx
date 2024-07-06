@@ -5,7 +5,7 @@ const mont = Montserrat({ subsets: ["latin"] });
 
 const ContactUs = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen gap-9 mb-5 md:mb-0">
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen gap-9 my-6 md:my-0">
         <div className="md:w-1/2 w-5/6 max-w-lg bg-white p-8 rounded-lg shadow-lg">
           <h2 className={`text-3xl font-bold mb-6 ${mont.className}`}>Contact Us</h2>
           <form action="#" method="POST">

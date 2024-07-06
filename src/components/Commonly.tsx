@@ -37,7 +37,7 @@ const Commonly = () => {
         <section className="container mx-auto md:py-8 px-4">
             <div className="bg-white rounded-lg shadow-lg p-8">
                 <h2 className={`text-3xl md:text-5xl font-bold mb-6 text-gray-900 text-center ${mont.className}`}>Commonly Notarized Documents</h2>
-                <div className="h-2 md:w-[600px] w-[200px] bg-blue-500 mx-auto relative -top-3 py-0"/>
+                <div className="h-2 md:w-[600px] w-[200px] bg-[#3AAFA9] mx-auto relative -top-3 py-0"/>
 
                 <ul className="list-none space-y-4 grid md:grid-cols-2 gap-x-3">
                     {items.map((item, index) => {

@@ -22,7 +22,7 @@ const Promise = () => {
           <h2 className={`text-3xl font-bold ${mont.className}`}>
             Our Promise to the Community & State
           </h2>
-          <div className="h-2 md:w-[500px] w-[200px] bg-blue-500 mx-auto relative -top-2 py-0"/>
+          <div className="h-2 md:w-[500px] w-[200px] bg-[#3AAFA9] mx-auto relative -top-2 py-0"/>
 
           <p className="text-lg">
             We take our role as notaries seriously and are committed to serving
