@@ -19,7 +19,7 @@ export default function Home() {
           className=" opacity-100 h-full w-full object-cover"
           src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         />
-        <div className="absolute top-0 h-full w-full z-10 bg-[#17252A]/70"/>
+        <div className="absolute top-0 h-full w-full z-10 bg-purple-900/85"/>
         <div className=" absolute flex flex-col gap-7 justify-center md:items-center z-10 text-[#DEF2F1] h-full w-full top-0 px-5 md:text-center  ">
           <h2
             className={` text-5xl md:text-8xl font-bold ${mont.className} `}
@@ -27,14 +27,14 @@ export default function Home() {
             ASAP MOBILE NOTARY{" "}
           </h2>
           <div className=" poppins-medium text-3xl md:text-4xl rounded-md">
-            Your Trusted Notary Publics and Process Services
+            Your Trusted Notary Public and Process Server
           </div>
           <Button size={"lg"} className="text-xl w-fit bg-[#DEF2F1] text-black font-semibold hover:bg-white">
             Contact ASAP
           </Button>
         </div>
       </div>
-      <About />
+      {/* <About /> */}
       <Promise />
       <WhyUs />
       <ServiceGuidelines />
@@ -56,17 +56,17 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-white text-center">
             <div className="text-[#3aafa9] font-bold rounded-lg shadow-lg p-6">
-              <h3 className="text-4xl md:text-6xl  mb-2">5000+</h3>
+              <h3 className="text-4xl md:text-6xl  mb-2">2000+</h3>
               <p className="text-2xl md:text-xl">Satisfied Clients</p>
             </div>
 
             <div className="text-[#3aafa9] font-bold rounded-lg shadow-lg p-6">
-              <h3 className="text-4xl md:text-6xl  mb-2">75%</h3>
+              <h3 className="text-4xl md:text-6xl  mb-2">95%</h3>
               <p className="text-2xl md:text-xl">Repeat Customers</p>
             </div>
 
             <div className="text-[#3aafa9] rounded-lg font-bold shadow-lg p-6">
-              <h3 className="text-4xl md:text-6xl  mb-2">2010</h3>
+              <h3 className="text-4xl md:text-6xl  mb-2">2015</h3>
               <p className="text-2xl md:text-xl">Industry Experience</p>
             </div>
           </div>
