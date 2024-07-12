@@ -8,7 +8,7 @@ const Footer = () => {
           <p>We are not a law firm. We do not make any legal advice.</p>
         </div> */}
 
-        <div className="md:grid md:grid-cols-8 text-left md:gap-10 space-y-7 justify-center container mb-10 md:mb-0">
+        <div className="md:grid md:grid-cols-8 text-left md:gap-10 space-y-7 md:space-y-0 justify-center container mb-10 md:mb-0">
           <div className="md:col-span-2 space-y-2">
             <h2 className="text-lg font-bold  ">About Us</h2>
             <p>
