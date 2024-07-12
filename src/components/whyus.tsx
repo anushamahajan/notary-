@@ -29,7 +29,7 @@ const WhyUs = () => {
   return (
     <section className="py-24 px-4 bg-[#100028] text-white">
       <div className="md:container px-2 mx-auto text-center ">
-        <Heading title="Why Choose Us?" className="text-white" />
+        <Heading title="Why Choose Us?" className="text-white"  body="mx-auto"/>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 *:bg-opacity-80">
           {items.map((item, index) => {

@@ -8,35 +8,30 @@ const Footer = () => {
           <p>We are not a law firm. We do not make any legal advice.</p>
         </div> */}
 
-        <div className="md:grid md:grid-cols-8 text-left md:gap-10 gap-2 justify-center container ">
-        <div className="md:col-span-2 space-y-2">
+        <div className="md:grid md:grid-cols-8 text-left md:gap-10 space-y-7 justify-center container mb-10 md:mb-0">
+          <div className="md:col-span-2 space-y-2">
             <h2 className="text-lg font-bold  ">About Us</h2>
-            <p>Broward & Palm Beach County aims to bring affordable notary services just a phone call away and is backed by 5000+ happy clients that believe in us.</p>
+            <p>
+              Broward & Palm Beach County aims to bring affordable notary
+              services just a phone call away and is backed by 5000+ happy
+              clients that believe in us.
+            </p>
           </div>
-          <div className="md:col-span-3 space-y-2">         
-                <div className="text-lg font-bold text-center">Certificates</div>
-                <div className="grid-cols-3 grid gap-3 px-7">
-                  <img
-                    src="cert1.png"
-                    alt="Certificate 1"
-                    className=""
-                  />
-                  <img
-                    src="cert2.png"
-                    alt="Certificate 2"
-                    className=""
-                  />
-                  <img
-                    src="cert3.png"
-                    alt="Certificate 3"
-                    className=""
-                  />
-                </div>
-              
-          
+          <div className="md:col-span-3 space-y-2">
+            <div className="text-lg font-bold md:text-center">Certificates</div>
+            <div className="grid-cols-3 grid gap-3 md:px-7">
+              <a href="/cert1.png">
+                <img src="cert1.png" alt="Certificate 1" className="" />
+              </a>
+              <a href="/cert2.png">
+                <img src="cert2.png" alt="Certificate 2" className="" />
+              </a>
+              <a href="/cert3.png">
+                <img src="cert3.png" alt="Certificate 3" className="" />
+              </a>
+            </div>
           </div>
 
-         
           <div className="md:col-span-1 space-y-2">
             <h2 className="text-lg font-bold  ">Quick Links</h2>
             <ul className="text-sm space-y-1">
@@ -66,11 +61,18 @@ const Footer = () => {
           <div className="md:col-span-2 space-y-2">
             <h2 className="text-lg font-bold ">Get in Touch</h2>
             <ul className="text-sm space-y-1">
-              <li><span className="font-semibold">Phone :</span> (954) 448-8542</li>
-              <li><span className="font-semibold">Email :</span> hemant.kumar@gmail.com</li>
-              <li><span className="font-semibold">Address :</span> 123 Main St, City, State, 12345</li>
+              <li>
+                <span className="font-semibold">Phone :</span> (954) 448-8542
+              </li>
+              <li>
+                <span className="font-semibold">Email :</span>{" "}
+                hemant.kumar@gmail.com
+              </li>
+              <li>
+                <span className="font-semibold">Address :</span> 123 Main St,
+                City, State, 12345
+              </li>
             </ul>
-           
           </div>
         </div>
       </div>
