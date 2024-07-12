@@ -1,50 +1,50 @@
-"use client";
-import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-import "swiper/css";
-import { FreeMode, Autoplay } from "swiper/modules";
-import { Montserrat } from "next/font/google";
-const mont = Montserrat({ subsets: ["latin"] });
+'use client'
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
+
+const marquee = keyframes`
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+`;
+
+const MarqueeContainer = styled.div`
+  overflow: hidden;
+  padding-top : 3rem;
+  white-space: nowrap;
+  width: 100%;
+  background: #fff;
+  position: relative;
+`;
+
+const MarqueeContent = styled.div`
+  display: inline-block;
+  animation: ${marquee} 20s linear infinite;
+`;
+
+const Slide = styled.img`
+  display: inline-block;
+  width: 25%;
+  background-color: red;
+  object-fit: contain;
+  margin-right: 32px; /* Adjust spacing between slides */
+`;
 
 const Sliderss = () => {
   return (
-    <div className="py-7">
-      <h2
-        className={`md:text-4xl text-4xl font-bold text-[#001f3f] text-center ${mont.className}`}
-      >
-        Industry Resources
-      </h2>
-      <div className="h-2 md:w-[300px] w-[200px] bg-[#3AAFA9] mx-auto relative mb-8 mt-2 py-0"/>
-
-      <Swiper
-        breakpoints={{
-          768: {
-            slidesPerView: 4,
-          },
-        }}
-        slidesPerView={1}
-        spaceBetween={30}
-        freeMode={true}
-        // centeredSlides={true}
-        loop={true}
-        autoplay={{
-          delay: 1000,
-          disableOnInteraction: false,
-        }}
-        modules={[FreeMode, Autoplay]}
-        className="mySwiper w-[90%]"
-      >
+    <MarqueeContainer>
+      <MarqueeContent>
         {Array.from({ length: 10 }).map((_, index) => (
-          <SwiperSlide key={index} className="">
-            <img
-              className="bg-red-200 w-full object-contain"
-              src={`/slider/${index+1}.png`}
-              alt={`slide-${index}`}
-            />
-          </SwiperSlide>
+          <Slide key={index} src={`/slider/${index + 1}.png`} alt={`slide-${index}`} />
         ))}
-      </Swiper>
-    </div>
+        {Array.from({ length: 10 }).map((_, index) => (
+          <Slide key={index + 10} src={`/slider/${index + 1}.png`} alt={`slide-${index}`} />
+        ))}
+      </MarqueeContent>
+    </MarqueeContainer>
   );
 };
 

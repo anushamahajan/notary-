@@ -1,5 +1,6 @@
 import { Montserrat } from "next/font/google";
 import React from "react";
+import Heading from "./Heading";
 const mont = Montserrat({ subsets: ["latin"] });
 
 const WhyUs = () => {
@@ -26,19 +27,16 @@ const WhyUs = () => {
     },
   ];
   return (
-    <section className="py-24 px-4 bg-[#17252A] text-white">
+    <section className="py-24 px-4 bg-[#100028] text-white">
       <div className="md:container px-2 mx-auto text-center ">
-        <h2 className={`${mont.className} text-3xl md:text-5xl font-extrabold md:mb-8 `}>
-          Why Choose Us?
-        </h2>
-        <div className="h-2 md:w-[350px] w-[200px] bg-[#3AAFA9] mx-auto relative md:-top-4 mt-3 md:mt-0 mb-8 md:mb-5 py-0"/>
+        <Heading title="Why Choose Us?" className="text-white" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 *:bg-opacity-80">
           {items.map((item, index) => {
             return (
               <div
                 key={index}
-                className={`p-6 rounded-lg shadow-lg ${index%2 ? "bg-[#3AAFA9]":"bg-[#DEF2F1] text-black"}`}
+                className={`p-6 rounded-lg shadow-lg ${index%2 ? "bg-purple-700":"bg-purple-300 text-black"}`}
               >
                 <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
                 <p>{item.desc}</p>
