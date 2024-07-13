@@ -79,7 +79,9 @@
 
 
 
-
+* {
+  scroll-behavior: smooth;
+}
 
 .app-scrollbar::-webkit-scrollbar {
   display: block;

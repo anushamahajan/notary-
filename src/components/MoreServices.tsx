@@ -23,7 +23,7 @@ const MoreServices = () => {
   return (
     <section className=" text-gray-800 py-12">
       <div className="container mx-auto md:text-center">
-        <Heading title="Mobile Notary Services in Broward & Palm Beach County" />
+        <Heading title="More Services" />
 
         <p className="text-purple-700 font-semibold my-4">
           At Broward & Palm Beach County Mobile Notary, we vouch to provide

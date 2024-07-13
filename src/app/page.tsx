@@ -1,3 +1,4 @@
+'use client';
 import About from "@/components/About";
 import Commonly from "@/components/Commonly";
 import ContactUs from "@/components/ContactUs";
@@ -12,12 +13,30 @@ import ServiceGuidelines from "@/components/ServiceGuidelines";
 import Services from "@/components/Services";
 import Sliderss from "@/components/Slider";
 import Testimonials from "@/components/Testimonials";
+import RequestDialog from "@/components/requestCallDialog";
 import { Button } from "@/components/ui/button";
 import WhyUs from "@/components/whyus";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
+import React, { useEffect } from "react";
+
+
 const mont = Montserrat({ subsets: ["latin"] });
+
+
 export default function Home() {
+  const [open, setOpen] = React.useState(false);
+
+  useEffect(() => {
+    // Set a timer to toggle the open state to true after 2 seconds (2000 milliseconds)
+    const timer = setTimeout(() => {
+      setOpen(true);
+    }, 2000);
+
+    // Cleanup the timer if the component unmounts before the timer completes
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <main className="app-scrollbar">
       <Navbar />
@@ -36,9 +55,11 @@ export default function Home() {
           <div className=" poppins-medium text-3xl md:text-4xl rounded-md">
             Your Trusted Notary Public and Process Server
           </div>
+          <Link href="#contactus"> 
           <Button size={"lg"} className="text-xl w-fit bg-white text-black font-semibold hover:bg-white">
             Contact ASAP
           </Button>
+          </Link>
         </div>
       </div>
       <Services/>
@@ -51,7 +72,7 @@ export default function Home() {
       {/* <Commonly /> */}
       <section className="py-16 px-4">
         <div className="container mx-auto md:text-center">
-          <Heading title="Notary Services in Broward & Palm Beach County"/>
+          <Heading title="Our Numbers Speak"/>
 
           <p className="text-lg md:text-xl mb-8">
             Serving Broward & Palm Beach County, we set the industry benchmark
@@ -79,6 +100,7 @@ export default function Home() {
       <Testimonials/>
       <Sliderss />
       <RequestCallback/>
+      <RequestDialog open={open} setOpen={setOpen} />
 
       <ContactUs />
       <Footer/>

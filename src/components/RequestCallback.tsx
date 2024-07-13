@@ -1,7 +1,10 @@
+'use client'
 import React from "react";
 import { Button } from "./ui/button";
+import RequestDialog from "./requestCallDialog";
 
 const RequestCallback = () => {
+  const [open, setOpen] = React.useState(false);
   return (
     <section className="bg-gradient-to-r from-purple-900 to-fuchsia-900 py-12">
       <div className="container mx-auto md:text-center">
@@ -17,11 +20,13 @@ const RequestCallback = () => {
             Focus on your important tasks while our team ensures your notary
             needs are met with precision and efficiency.
           </p>
-          <Button variant={'secondary'} size={'lg'} className="font-semibold">
+          <Button variant={'secondary'} size={'lg'} className="font-semibold" onClick={()=>setOpen(true)}>
             Request a Callback
           </Button>
         </div>
       </div>
+
+      <RequestDialog open={open} setOpen={setOpen} />
     </section>
   );
 };
