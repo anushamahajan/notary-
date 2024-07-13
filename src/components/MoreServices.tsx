@@ -22,41 +22,10 @@ const MoreServices = () => {
   ];
   return (
     <section className=" text-gray-800 py-12">
-      <div className="container mx-auto md:text-center">
-        <Heading title="More Services" />
-
-        <p className="text-purple-700 font-semibold my-4">
-          At Broward & Palm Beach County Mobile Notary, we vouch to provide
-          affordable notary services right to your door.
-          <span className="hidden md:inline">Trusted by over 5000+ clients, we are committed to excellence and reliability. We are dedicated to offer 24/7 notary services that are both convenient and flexible, allowing you to prioritize what matters most in your life.</span>
-        </p>
-
-        <p className="">
-          Our team of notaries, appointed by the Secretary of State, is devoted
-          to combating fraud and upholding integrity. Our commitments to the
-          community and the state include:
-        </p>
-        <div className="bg-white text-gray-800 py-6">
-          <div className="container px-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {purpleBoxes.map((item, index) => {
-                return (
-                  <div
-                    key={index}
-                    className=" p-4 bg-purple-600 text-white rounded-lg shadow flex items-center "
-                  >
-                    <h3 className="md:text-sm font-semibold text-center">
-                      {item}
-                    </h3>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       <div className="container my-4">
+        <Heading title="More Services" />
         <p className=" text-purple-700 font-semibold my-4">
           Our extensive array of services ensures that all your notary needs are
           met conveniently and efficiently. No need to search
@@ -75,6 +44,39 @@ const MoreServices = () => {
               </div>
             );
           })}
+        </div>
+      </div>
+
+      <div className="container">
+
+        <p className="text-purple-700 font-semibold my-4">
+          At Broward & Palm Beach County Mobile Notary, we vouch to provide
+          affordable notary services right to your door.
+          <span className="hidden md:inline">Trusted by over 5000+ clients, we are committed to excellence and reliability. We are dedicated to offer 24/7 notary services that are both convenient and flexible, allowing you to prioritize what matters most in your life.</span>
+        </p>
+
+        <p className="">
+          Our team of notaries, appointed by the Secretary of State, is devoted
+          to combating fraud and upholding integrity. Our commitments to the
+          community and the state include:
+        </p>
+        <div className="bg-white text-gray-800 py-6">
+          <div className="">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {purpleBoxes.map((item, index) => {
+                return (
+                  <div
+                    key={index}
+                    className=" p-4 bg-purple-600 text-white rounded-lg shadow flex items-center "
+                  >
+                    <h3 className="md:text-sm font-semibold text-center">
+                      {item}
+                    </h3>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </section>

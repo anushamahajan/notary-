@@ -32,7 +32,7 @@ export default function Home() {
     // Set a timer to toggle the open state to true after 2 seconds (2000 milliseconds)
     const timer = setTimeout(() => {
       setOpen(true);
-    }, 2000);
+    }, 8000);
 
     // Cleanup the timer if the component unmounts before the timer completes
     return () => clearTimeout(timer);
@@ -66,8 +66,8 @@ export default function Home() {
       <MoreServices/>
       {/* <About /> */}
       {/* <Promise /> */}
-      <WhyUs />
       <ProcessServer/>
+      <WhyUs />
       {/* <ServiceGuidelines /> */}
       {/* <Commonly /> */}
       <section className="py-16 px-4">
