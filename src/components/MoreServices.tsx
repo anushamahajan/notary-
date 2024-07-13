@@ -45,7 +45,7 @@ const MoreServices = () => {
                     key={index}
                     className=" p-4 bg-purple-600 text-white rounded-lg shadow flex items-center "
                   >
-                    <h3 className="text-lg md:text-sm font-semibold text-center">
+                    <h3 className="md:text-sm font-semibold text-center">
                       {item}
                     </h3>
                   </div>

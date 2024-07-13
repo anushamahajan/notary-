@@ -13,7 +13,7 @@ const marquee = keyframes`
 
 const MarqueeContainer = styled.div`
   overflow: hidden;
-  padding-top : 3rem;
+  padding : 3rem 0;
   white-space: nowrap;
   width: 100%;
   background: #fff;

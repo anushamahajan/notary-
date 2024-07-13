@@ -56,7 +56,7 @@ const Services = () => {
                 <div className="*:w-8 *:h-8 mr-2 text-purple-700">
                     {item.icon}
                 </div>
-                <h2 className="text-3xl font-bold text-purple-700 ">{item.title}</h2>
+                <h2 className="md:text-3xl text-2xl font-bold text-purple-700 ">{item.title}</h2>
             </div>
             <p className="">
                 {item.description}
