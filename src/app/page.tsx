@@ -4,6 +4,7 @@ import Commonly from "@/components/Commonly";
 import ContactUs from "@/components/ContactUs";
 import Footer from "@/components/Footer";
 import Heading from "@/components/Heading";
+import Hero from "@/components/Hero";
 import MoreServices from "@/components/MoreServices";
 import Navbar from "@/components/Navbar";
 import ProcessServer from "@/components/ProcessServer";
@@ -32,7 +33,7 @@ export default function Home() {
     // Set a timer to toggle the open state to true after 2 seconds (2000 milliseconds)
     const timer = setTimeout(() => {
       setOpen(true);
-    }, 8000);
+    }, 10000);
 
     // Cleanup the timer if the component unmounts before the timer completes
     return () => clearTimeout(timer);
@@ -40,28 +41,7 @@ export default function Home() {
   return (
     <main className="app-scrollbar">
       <Navbar />
-      <div className="h-screen relative ">
-        <img
-          className=" opacity-100 h-full w-full object-cover"
-          src="/county.jpg"
-        />
-        <div className="absolute top-0 h-full w-full z-10 bg-purple-900/80"/>
-        <div className=" absolute flex flex-col gap-7 justify-center md:items-center z-10 text-white h-full w-full top-0 px-5 md:text-center  ">
-          <h2
-            className={` text-5xl md:text-8xl font-bold ${mont.className} `}
-          >
-            ASAP MOBILE NOTARY{" "}
-          </h2>
-          <div className=" poppins-medium text-3xl md:text-4xl rounded-md">
-            Your Trusted Notary Public and Process Server
-          </div>
-          <Link href="#contactus"> 
-          <Button size={"lg"} className="text-xl w-fit bg-white text-black font-semibold hover:bg-white">
-            Contact ASAP
-          </Button>
-          </Link>
-        </div>
-      </div>
+      <Hero/>
       <Services/>
       <MoreServices/>
       {/* <About /> */}
