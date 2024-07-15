@@ -39,10 +39,10 @@ const Navbar = () => {
 
   return (
     <nav className="absolute bg-white z-20 border-b border-gray-600  text-xl w-full">
-      <div className="bg-gray-100 py-2.5 w-full px-5 text-xs text-center md:text-left">
+      <div className="bg-gray-100 font-semibold py-2.5 w-full px-5 text-xs text-center md:text-left">
         <PhoneIcon className="inline mr-1 text-purple-600 stroke-[2px]" size={15}/> <Link href={'tel:+1 (954) 448-8542'}
          className=" text-purple-600">+1 (954) 448-8542</Link>
-        {""} <HomeIcon className="inline ml-3 mr-1 text-purple-600 stroke-[2px]" size={15}/> 1431 S. Pompano Parkway, Pompano Beach, FL 33069</div>
+        {""} <HomeIcon className="inline ml-3 mr-1 text-purple-600 stroke-[2px]" size={15}/> 502 NE 44th St. Oakland Park FL 33334-3118 </div>
       <div className="flex items-center justify-between  py-4 px-5">
         <div>
           <img src="./logo4.jpg" alt="" className="h-[5.5rem] -ml-6" />

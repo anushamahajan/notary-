@@ -67,7 +67,11 @@ const ProcessServer = () => {
           ))}
         </div>
       </div>
-      <div className=" w-[90vw] mx-auto md:w-full h-96">
+      <div className=" w-[90vw] relative mx-auto md:w-full h-96">
+        <div className="bg-white/80 absolute top-1/2 -translate-y-1/2 p-5 mx-4 font-semibold text-center">
+ We do CT Corp runs on a daily basis at very low charges.
+
+        </div>
         <img src="/img2.jpg" alt="process server image" className="h-full object-cover w-full" />
         </div>
 

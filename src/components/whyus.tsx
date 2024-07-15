@@ -1,6 +1,8 @@
 import { Montserrat } from "next/font/google";
 import React from "react";
 import Heading from "./Heading";
+import { FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
 const mont = Montserrat({ subsets: ["latin"] });
 
 const WhyUs = () => {
@@ -44,6 +46,10 @@ const WhyUs = () => {
             );
           })}
         </div>
+
+        <Link href={"https://wa.me/+1954488542"} className="w-[300px] bg-purple-900 flex justify-center font-medium gap-3 items-center rounded-full py-4 my-10 mx-auto">
+          <FaWhatsapp className="text-green-500 stroke-[10px]" size={25}/> Message us on whatsapp
+        </Link>
       </div>
     </section>
   );
