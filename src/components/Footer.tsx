@@ -66,11 +66,10 @@ const Footer = () => {
               </li>
               <li>
                 <span className="font-semibold">Email :</span>{" "}
-                hemant.kumar@gmail.com
+                pareek1234@gmail.com
               </li>
               <li>
-                <span className="font-semibold">Address :</span> 123 Main St,
-                City, State, 12345
+                <span className="font-semibold">Address :</span> 502 NE 44th St. Oakland Park FL 33334-3118
               </li>
             </ul>
           </div>
