@@ -21,6 +21,7 @@ import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
+import CountUp from "react-countup";
 
 
 const mont = Montserrat({ subsets: ["latin"] });
@@ -61,17 +62,18 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-white text-center">
             <div className="text-purple-700 font-bold rounded-lg shadow-lg p-6">
-              <h3 className="text-4xl md:text-6xl  mb-2">2000+</h3>
+            <CountUp end={2000} enableScrollSpy={true} useGrouping={false} suffix="+" className="text-4xl md:text-6xl  mb-2" />
               <p className="text-2xl md:text-xl">Satisfied Clients</p>
             </div>
 
             <div className="text-purple-700 font-bold rounded-lg shadow-lg p-6">
-              <h3 className="text-4xl md:text-6xl  mb-2">95%</h3>
+            <CountUp end={95} enableScrollSpy={true} suffix="%" className="text-4xl md:text-6xl  mb-2" />
+
               <p className="text-2xl md:text-xl">Repeat Customers</p>
             </div>
 
             <div className="text-purple-700 rounded-lg font-bold shadow-lg p-6">
-              <h3 className="text-4xl md:text-6xl  mb-2">2015</h3>
+            <CountUp end={2015} enableScrollSpy={true} useGrouping={false} className="text-4xl md:text-6xl  mb-2" />
               <p className="text-2xl md:text-xl">Industry Experience</p>
             </div>
           </div>
