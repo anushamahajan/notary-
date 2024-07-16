@@ -48,7 +48,7 @@ const Hero = () => {
                   </h1>
                   <p className="text-lg md:text-2xl md:px-10" data-swiper-parallax="-400">{item.desc}</p>
                   <Link href="#contactus" data-swiper-parallax="-400">
-                    <Button variant={'secondary'} className="mt-4" data-swiper-parallax="-400">Contact ASAP</Button>
+                    <Button variant={'secondary'} className="mt-4" data-swiper-parallax="-400">Contact Us</Button>
                   </Link>
                 </div>
               </div>

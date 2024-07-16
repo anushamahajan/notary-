@@ -56,7 +56,7 @@ const ContactUs = () => {
           <iframe
             className='md:w-1/2 w-5/6' height="480"
 
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.467398351112!2d-80.1405795!3d26.181469699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9022ebf431137%3A0x30d38058dc849403!2sNE%2044th%20St%2C%20Oakland%20Park%2C%20FL%2033334%2C%20USA!5e0!3m2!1sen!2sin!4v1721138092360!5m2!1sen!2sin"
           >
           </iframe>
 
