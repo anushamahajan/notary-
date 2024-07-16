@@ -12,29 +12,21 @@ const Navbar = () => {
 
   const items = [
     {
-      title: "About us",
-      link: "#about",
-    },
-    {
-      title: "Our Promise",
-      link: "#promise",
+      title: "Services",
+      link: "#services",
     },
     {
       title: "Why Us?",
       link: "#whyus",
     },
     {
-      title: "Guidelines",
-      link: "#guidelines",
+      title: "Testimonials",
+      link: "#testimonials",
     },
     {
-      title: "Documents",
-      link: "#documents",
-    },
-    {
-      title: "Customers",
-      link: "#",
-    },
+      title: "Contact",
+      link: "#contactus",
+    }
   ];
 
   return (

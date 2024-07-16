@@ -29,7 +29,7 @@ const WhyUs = () => {
     },
   ];
   return (
-    <section className="py-24 px-4 bg-[#100028] text-white">
+    <section className="py-24 px-4 bg-[#100028] text-white" id="whyus">
       <div className="md:container px-2 mx-auto text-center ">
         <Heading title="Why Choose Us?" className="text-white"  body="mx-auto"/>
 

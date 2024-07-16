@@ -46,7 +46,7 @@ const Testimonials = (props: Props) => {
 
   const swiperRef = useRef<SwiperType>();
   return (
-    <div className="relative py-20 bg-[#100028] container px-11 md:px-20 md:max-w-none">
+    <div className="relative py-20 bg-[#100028] container px-11 md:px-20 md:max-w-none" id="testimonials">
         <Heading title="What Our Clients Say" className="text-white"/>
       <Swiper
       

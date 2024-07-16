@@ -51,7 +51,7 @@ const Services = () => {
     },
   ];
   return (
-    <section className="container pt-10 ">
+    <section className="container pt-10 " id="services">
       <div className="py-6 md:py-10">
         <Heading title="Mobile Notary Services in Broward & Palm Beach County" />
         <p className="text-lg ">
