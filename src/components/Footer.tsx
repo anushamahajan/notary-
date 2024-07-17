@@ -66,7 +66,7 @@ const Footer = () => {
               </li>
               <li>
                 <span className="font-semibold">Email :</span>{" "}
-                pareek1234@gmail.com
+                notaryquote@gmail.com
               </li>
               <li>
                 <span className="font-semibold">Address :</span> 502 NE 44th St. Oakland Park FL 33334
