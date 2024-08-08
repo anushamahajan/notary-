@@ -65,10 +65,10 @@ const Services = () => {
           return (
             <div key={index}>
               <div className="flex items-center mb-2 ">
-                <div className="*:w-8 *:h-8 mr-2 text-purple-700">
+                <div className="*:w-8 *:h-8 mr-2 text-orange-600">
                   {item.icon}
                 </div>
-                <h2 className="md:text-3xl text-2xl font-bold text-purple-700 ">
+                <h2 className="md:text-3xl text-2xl font-bold text-orange-600 ">
                   {item.title}
                 </h2>
               </div>

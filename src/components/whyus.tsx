@@ -38,7 +38,7 @@ const WhyUs = () => {
             return (
               <div
                 key={index}
-                className={`p-6 rounded-lg shadow-lg ${index%2 ? "bg-purple-700":"bg-purple-300 text-black"}`}
+                className={`p-6 rounded-lg shadow-lg ${index%2 ? "bg-orange-600":"bg-orange-300 text-black"}`}
               >
                 <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
                 <p>{item.desc}</p>
@@ -47,7 +47,7 @@ const WhyUs = () => {
           })}
         </div>
 
-        <Link href={"https://wa.me/+1954488542"} className="w-[320px] bg-purple-900 flex justify-center font-medium gap-3 items-center rounded-full py-4 my-10 mx-auto text-xl border-white border-4 border-dotted">
+        <Link href={"https://wa.me/+1954488542"} className="w-[320px] bg-orange-900 flex justify-center font-medium gap-3 items-center rounded-full py-4 my-10 mx-auto text-xl border-white border-4 border-dotted">
           <FaWhatsapp className="text-green-500 stroke-[10px]" size={35}/> Message us on whatsapp
         </Link>
       </div>

@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <nav className="absolute bg-white z-20 border-b border-gray-600  text-xl w-full">
-      <div className="bg-purple-600 font-semibold py-2.5 w-full px-5 text-xs text-white text-center md:text-left">
+      <div className="bg-orange-600 font-semibold py-2.5 w-full px-5 text-xs text-white text-center md:text-left">
         <PhoneIcon
           className="inline mr-1 text-white stroke-[2px]"
           size={15}

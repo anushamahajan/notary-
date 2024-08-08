@@ -6,7 +6,7 @@ import RequestDialog from "./requestCallDialog";
 const RequestCallback = () => {
   const [open, setOpen] = React.useState(false);
   return (
-    <section className="bg-gradient-to-r from-purple-900 to-fuchsia-900 py-12">
+    <section className="bg-gradient-to-r from-orange-900 to-fuchsia-900 py-12">
       <div className="container mx-auto md:text-center">
         <div className="text-cente">
           <h2 className="text-2xl font-bold text-white mb-4">

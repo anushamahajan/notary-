@@ -3,7 +3,7 @@ import { TiTick } from "react-icons/ti";
 import Heading from "./Heading";
 
 const MoreServices = () => {
-  const purpleBoxes = [
+  const orangeBoxes = [
     "Authenticating documents with precision",
     "Verifying the genuineness of signatures",
     "Ensuring signers willingly participate without coercion",
@@ -26,7 +26,7 @@ const MoreServices = () => {
 
       <div className="container my-4">
         <Heading title="More Services" />
-        <p className=" text-purple-700 font-semibold my-4">
+        <p className=" text-orange-600 font-semibold my-4">
           Our extensive array of services ensures that all your notary needs are
           met conveniently and efficiently. No need to search
           elsewhere—everything you require is right here.
@@ -37,7 +37,7 @@ const MoreServices = () => {
               <div key={index} className="flex items-center">
                 <TiTick
                   size={25}
-                  className="text-purple-600"
+                  className="text-orange-600"
                 />
 
                 <h3 className="font-semibold">{item}</h3>
@@ -49,7 +49,7 @@ const MoreServices = () => {
 
       <div className="container">
 
-        <p className="text-purple-700 font-semibold my-4">
+        <p className="text-orange-600 font-semibold my-4">
           At Broward & Palm Beach County Mobile Notary, we vouch to provide
           affordable notary services right to your door.
           <span className="hidden md:inline">Trusted by over 5000+ clients, we are committed to excellence and reliability. We are dedicated to offer 24/7 notary services that are both convenient and flexible, allowing you to prioritize what matters most in your life.</span>
@@ -63,11 +63,11 @@ const MoreServices = () => {
         <div className="bg-white text-gray-800 py-6">
           <div className="">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {purpleBoxes.map((item, index) => {
+              {orangeBoxes.map((item, index) => {
                 return (
                   <div
                     key={index}
-                    className=" p-4 bg-purple-600 text-white rounded-lg shadow flex items-center "
+                    className=" p-4 bg-orange-600 text-white rounded-lg shadow flex items-center "
                   >
                     <h3 className="md:text-sm font-semibold text-center">
                       {item}
