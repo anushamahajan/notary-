@@ -11,7 +11,7 @@ const mont = Montserrat({ subsets: ["latin"] });
 const Hero = () => {
   const items = [
     {
-      img: "https://images.unsplash.com/photo-1614605844432-731c32334c49?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: "/image.jpg",
       title: "SECURE YOUR TRANSACTIONS WITH CONFIDENCE",
       desc: "Our certified notaries ensure the legitimacy and authenticity of your important documents.",
     },
@@ -29,7 +29,7 @@ const Hero = () => {
   return (
     <>
       <Swiper slidesPerView={1} spaceBetween={0} loop={true}
-      autoplay={{ delay: 2000, disableOnInteraction: false }}
+      autoplay={{ delay: 5000, disableOnInteraction: false }}
       modules={[Parallax, Autoplay]}
     //   speed={300}
       parallax={true}>
@@ -37,12 +37,12 @@ const Hero = () => {
           return (
             <SwiperSlide key={index}>
               <div
-                className="bg-cover bg-bottom bg-no-repeat pt-7 md:pt-20 h-screen relative flex items-center md:justify-center"
+                className="bg-cover bg-bottom bg-no-repeat relative  md:pt-20 h-screen  flex items-center md:justify-center"
                 style={{ backgroundImage: `url(${item.img})` }}
                 
               >
-                <div className="absolute h-full w-full bg-black/50"/>
-                <div className="text-white md:text-center z-10 md:max-w-screen-xl space-y-4 p-5">
+                <div className="absolute h-full w-full bg-black/50"></div>
+                <div className="text-white md:text-center z-10 md:max-w-screen-xl space-y-4 p-5 absolute top-1/2 -translate-y-1/3">
                   <h1 className={`text-3xl md:text-6xl font-bold ${mont.className}`} data-swiper-parallax="-500">
                     {item.title}
                   </h1>
