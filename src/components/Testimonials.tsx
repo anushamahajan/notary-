@@ -87,7 +87,7 @@ const Testimonials = (props: Props) => {
         })}
       </Swiper>
       <div
-        className="prev absolute top-1/2 md:left-6 left-2 z-10 cursor-pointer text-orange-600"
+        className="prev absolute top-1/2 md:left-6 left-2 z-10 cursor-pointer text-purple-600"
         onClick={() => {
           swiperRef.current?.slidePrev();
         }}
@@ -95,7 +95,7 @@ const Testimonials = (props: Props) => {
         <FaChevronLeft size={30} />
       </div>
       <div
-        className="next absolute top-1/2 right-2 md:right-6 z-10 cursor-pointer text-orange-600"
+        className="next absolute top-1/2 right-2 md:right-6 z-10 cursor-pointer text-purple-600"
         onClick={() => {
           swiperRef.current?.slideNext();
         }}

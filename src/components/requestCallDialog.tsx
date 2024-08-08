@@ -47,7 +47,7 @@ const RequestDialog = ({ open, setOpen }: Props) => {
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent
           onOpenAutoFocus={(e) => e.preventDefault()}
-          className="bg-orange-600 text-white w-5/6 rounded-md"
+          className="bg-purple-700 text-white w-5/6 rounded-md"
         >
           <DialogHeader>
             <DialogTitle>Request a callback!</DialogTitle>

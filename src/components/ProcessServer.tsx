@@ -68,7 +68,7 @@ const ProcessServer = () => {
         </div>
       </div>
       <div className=" w-[90vw] relative mx-auto md:w-full h-96">
-        <div className="bg-orange-800/80 text-white absolute top-1/2 -translate-y-1/2 p-5 mx-4 font-semibold text-center">
+        <div className="bg-purple-800/80 text-white absolute top-1/2 -translate-y-1/2 p-5 mx-4 font-semibold text-center">
  We do CT Corp runs on a daily basis at very low charges.
 
         </div>

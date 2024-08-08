@@ -17,7 +17,7 @@ const About = () => {
         "We guide borrowers through loan documents thoroughly, efficiently, and professionally. Our knowledge ensures borrowers understand and complete the closing statement, note, deed of trust, and closing disclosures accurately. ",
     },
     {
-      color: "bg-orange-100",
+      color: "bg-purple-100",
       title: "24/7 Availability",
       content:
         "We are available around the clock. Whether you need a Loan Signing, Notary, or Permit Runner Service, you can count on us anytime.",
@@ -45,7 +45,7 @@ const About = () => {
           <h2 className={`md:text-5xl text-5xl font-bold text-[#001f3f] text-center ${mont.className}`}>
             About Us
           </h2>
-          <div className="h-2 w-[200px] bg-orange-600 mx-auto relative -top-2"/>
+          <div className="h-2 w-[200px] bg-purple-700 mx-auto relative -top-2"/>
           <p className="text-lg  mb-6 pyc-4 md:text-center text-left">
             We are a team of Notary Publics appointed by the Governor of
             Florida, authorized to perform notarizing acts in accordance with
@@ -65,7 +65,7 @@ const About = () => {
               return (
                 <div
                   key={index}
-                  className={`p-6 rounded-lg shadow-lg text-left border-orange-600 border-2`}
+                  className={`p-6 rounded-lg shadow-lg text-left border-purple-700 border-2`}
                 >
                   <h3 className={`text-2xl font-bold mb-2 ${mont.className}`}>{item.title}</h3>
                   <p>{item.content}</p>

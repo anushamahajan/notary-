@@ -61,18 +61,18 @@ export default function Home() {
             the community of over 5000 satisfied clients who trust us.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-white text-center">
-            <div className="text-orange-600 font-bold rounded-lg shadow-lg p-6">
+            <div className="text-purple-700 font-bold rounded-lg shadow-lg p-6">
             <CountUp end={2000} enableScrollSpy={true} useGrouping={false} suffix="+" className="text-4xl md:text-6xl  mb-2" />
               <p className="text-2xl md:text-xl">Satisfied Clients</p>
             </div>
 
-            <div className="text-orange-600 font-bold rounded-lg shadow-lg p-6">
+            <div className="text-purple-700 font-bold rounded-lg shadow-lg p-6">
             <CountUp end={95} enableScrollSpy={true} suffix="%" className="text-4xl md:text-6xl  mb-2" />
 
               <p className="text-2xl md:text-xl">Repeat Customers</p>
             </div>
 
-            <div className="text-orange-600 rounded-lg font-bold shadow-lg p-6">
+            <div className="text-purple-700 rounded-lg font-bold shadow-lg p-6">
             <CountUp end={2015} enableScrollSpy={true} useGrouping={false} className="text-4xl md:text-6xl  mb-2" />
               <p className="text-2xl md:text-xl">Industry Experience</p>
             </div>
