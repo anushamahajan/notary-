@@ -18,6 +18,7 @@ const ContactUs = () => {
       .send("service_13xmfel", "template_efxkuwo", {
         name: name,
         mobile: phone,
+        from : "Notary Website",
         message : message,
       })
       .then(

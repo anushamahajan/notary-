@@ -29,6 +29,7 @@ const RequestDialog = ({ open, setOpen }: Props) => {
       .send("service_13xmfel", "template_u9s253e", {
         name: name,
         mobile: mobile,
+        from : "Notary Website",
         email: email,
       })
       .then(
