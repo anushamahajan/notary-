@@ -47,7 +47,7 @@ const WhyUs = () => {
           })}
         </div>
 
-        <Link href={"https://wa.me/+1954488542"} className="w-[320px] bg-purple-900 flex justify-center font-medium gap-3 items-center rounded-full py-4 my-10 mx-auto text-xl border-white border-4 border-dotted">
+        <Link href={"https://wa.me/+19544488542"} className="w-[320px] bg-purple-900 flex justify-center font-medium gap-3 items-center rounded-full py-4 my-10 mx-auto text-xl border-white border-4 border-dotted">
           <FaWhatsapp className="text-green-500 stroke-[10px]" size={35}/> Message us on whatsapp
         </Link>
       </div>
