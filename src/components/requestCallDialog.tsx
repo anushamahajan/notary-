@@ -63,7 +63,7 @@ const RequestDialog = ({ open, setOpen }: Props) => {
           >
             <Input placeholder="Name" name="from_name" value={name} onChange={(e)=>setName(e.target.value)} />
             <Input placeholder="Phone Number" name="mobile" value={mobile} onChange={(e)=>setMobile(e.target.value)} />
-            <Input placeholder="Email" name="email" value={email} onChange={(e)=>setEmail(e.target.value)} />
+            <Input placeholder="Message" name="email" value={email} onChange={(e)=>setEmail(e.target.value)} />
             <Button className="w-min" variant={"secondary"} type="submit">
               Submit
             </Button>
