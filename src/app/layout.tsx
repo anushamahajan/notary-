@@ -20,9 +20,9 @@ export default function RootLayout({
     <html lang="en">
       
       <body className={`${inter.className} app-scrollbar`}>{children}
-      <Link  href={'tel:+1 (954) 448-8542'} className="fixed md:bottom-6 bottom-0 md:right-10 z-10 text-white py-3 w-full px-2 bg-purple-600 flex items-center justify-center gap-1 md:animate-bounce font-semibold md:w-fit md:rounded-xl md:px-4">
+      <Link  href={'tel:+1 (954) 448-8542'} className="fixed text-sm md:text-base md:bottom-6 bottom-0 md:right-10 z-10 text-white py-3 w-full px-2 bg-purple-600 flex items-center justify-center gap-1 md:animate-bounce font-semibold md:w-fit md:rounded-xl md:px-4">
           <IoIosCall className="inline text-white" />
-CALL +1 (954) 448-8542 FOR QUOTE
+CALL +1 (954) 448-8542 FOR AVAILABILITY
 
 
       </Link>

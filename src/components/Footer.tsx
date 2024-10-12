@@ -76,7 +76,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <p className="text-xs text-gray-300 pt-6 text-center">We are not a law firm. We do not make any legal advice</p>
+      <p className="text-xs text-gray-300 pt-6 text-center mb-10 px-3 md:mb-0">We are not a law firm. We do not make any legal advice. Please book an appointment via call before visiting.</p>
     </footer>
   );
 };
