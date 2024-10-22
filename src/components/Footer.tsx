@@ -9,7 +9,7 @@ const Footer = () => {
         </div> */}
 
         <div className="md:grid md:grid-cols-8 text-left md:gap-10 space-y-7 md:space-y-0 justify-center container mb-10 md:mb-0">
-          <div className="md:col-span-2 space-y-2">
+          <div className="md:col-span-2 space-y-2 md:hidden">
             <h2 className="text-lg font-bold  ">About Us</h2>
             <p>
               Broward & Palm Beach County aims to bring affordable notary
@@ -31,7 +31,9 @@ const Footer = () => {
               </a>
             </div>
           </div>
-
+          <div className="col-span-2 flex items-center">
+            <img src="/cards.jpg" alt="" />
+          </div>
           <div className="md:col-span-1 space-y-2">
             <h2 className="text-lg font-bold  ">Quick Links</h2>
             <ul className="text-sm space-y-1">
