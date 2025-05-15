@@ -19,6 +19,8 @@ const config = {
     },
     extend: {
       colors: {
+        navy: '#162c3e',     // dark navy
+        gold: '#a08852',    
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

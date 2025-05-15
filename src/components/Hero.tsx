@@ -9,25 +9,27 @@ import { Autoplay, Parallax } from "swiper/modules";
 const mont = Montserrat({ subsets: ["latin"] });
 
 const Hero = () => {
-  const items = [
-    {
-      img: "/image.jpg",
-      title: "SECURE YOUR TRANSACTIONS WITH CONFIDENCE",
-      desc: "Our certified notaries ensure the legitimacy and authenticity of your important documents.",
-    },
-    {
-      img: "https://images.pexels.com/photos/7841477/pexels-photo-7841477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "BONDED | LICENSED | INSURED",
-      desc: "Experience a faster, smoother, and more convenient way to get your documents notarized.",
-    },
-    {
-      img: "https://images.pexels.com/photos/3184416/pexels-photo-3184416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "COMPLETE NOTARY SERVICES 24 Hours A DAY",
-      desc: "Our certified notaries guide you through the process, ensuring your documents meet all legal requirements.",
-    },
-  ];
+    const items = [
+      {
+        img: "https://images.pexels.com/photos/7979404/pexels-photo-7979404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "TRUSTED NOTARY SOLUTIONS ",
+        desc: "At Broward Express Notary, we bring care, clarity, and confidence to your legal paperwork—led by Dolly Garg, a certified notary and passionate advocate for precision and professionalism.",
+      },
+      {
+        img: "https://images.pexels.com/photos/8111865/pexels-photo-8111865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "WOMAN-LED. COMMUNITY-DRIVEN.",
+        desc: "Founded by Dolly Garg, we proudly serve South Florida with mobile notary services that are prompt, discreet, and handled with heart. Legal documents deserve attention—and so do you.",
+      },
+      {
+        img: "https://images.pexels.com/photos/6476260/pexels-photo-6476260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "ON-TIME. ON-SITE. ON YOUR TERMS.",
+        desc: "Whether it’s real estate closings, healthcare directives, or school forms—our notary solutions meet you where you are. Weekends, evenings, and emergency slots available.",
+      },
+    ];
+    
   return (
     <>
+    <div className="">
       <Swiper slidesPerView={1} spaceBetween={0} loop={true}
       autoplay={{ delay: 5000, disableOnInteraction: false }}
       modules={[Parallax, Autoplay]}
@@ -41,14 +43,15 @@ const Hero = () => {
                 style={{ backgroundImage: `url(${item.img})` }}
                 
               >
-                <div className="absolute h-full w-full bg-black/50"></div>
+                <div className="absolute h-full w-full bg-black/60"></div>
                 <div className="text-white md:text-center z-10 md:max-w-screen-xl space-y-4 p-5 absolute top-1/2 -translate-y-1/3">
+                <div className="md:text-center md:text-3xl text-xl text-blue-300 font-semibold">BROWARD EXPRESS NOTARY</div>
                   <h1 className={`text-3xl md:text-6xl font-bold ${mont.className}`} data-swiper-parallax="-500">
                     {item.title}
                   </h1>
-                  <p className="text-lg md:text-2xl md:px-10" data-swiper-parallax="-400">{item.desc}</p>
+                  <p className="text-sm md:text-xl md:px-10" data-swiper-parallax="-400">{item.desc}</p>
                   <Link href="#contactus" data-swiper-parallax="-400">
-                    <Button variant={'secondary'} className="mt-4" data-swiper-parallax="-400">Contact Us</Button>
+                    <Button variant={'secondary'} className="my-8 md:py-7 md:px-12 rounded-lg text-lg font-bold bg-sky-900  text-white" data-swiper-parallax="-400">Contact Us</Button>
                   </Link>
                 </div>
               </div>
@@ -56,6 +59,7 @@ const Hero = () => {
           );
         })}
       </Swiper>
+      </div>
     </>
   );
 };

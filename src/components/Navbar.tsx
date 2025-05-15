@@ -10,28 +10,21 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const items = [
+  const navItems = [
+    { title: "Services", link: "#services" },
+    { title: "Why Us?", link: "#whyus" },
+    { title: "Testimonials", link: "#testimonials" },
     {
-      title: "Services",
-      link: "#services",
-    },
-    {
-      title: "Why Us?",
-      link: "#whyus",
-    },
-    {
-      title: "Testimonials",
-      link: "#testimonials",
-    },
-    {
-      title: "Contact",
+      title: "Reach Out Now",
       link: "#contactus",
+      className: "bg-sky-700 text-white rounded-2xl px-6 py-4",
     },
   ];
 
+
   return (
     <nav className="absolute bg-white z-20 border-b border-gray-600  text-xl w-full">
-      <div className="bg-purple-600 font-semibold py-2.5 w-full px-5 text-xs text-white text-center md:text-left">
+      <div className="bg-navy font-semibold py-2.5 w-full px-5 text-xs text-white text-center md:text-left">
         <PhoneIcon
           className="inline mr-1 text-white stroke-[2px]"
           size={15}
@@ -46,13 +39,17 @@ const Navbar = () => {
         />{" "}
         502 NE 44th St. Oakland Park FL 33334{" "}
       </div>
-      <div className="flex items-center justify-between  py-4 px-5">
+      <div className="flex items-center justify-between py-1 px-8">
         <div>
-          <img src="./logo4.jpg" alt="" className="h-[5.5rem] -ml-6" />
+          <img src="./logo4.jpg" alt="" className="md:h-24 h-16" />
         </div>
-        <div className="hidden md:flex h-full justify-end items-center gap-6 text-lg">
-          {items.map((item, index) => (
-            <a key={index} href={item.link} className="font-medium">
+        <div className="hidden md:flex h-full justify-end items-center gap-10 text-xl uppercase">
+          {navItems.map((item, index) => (
+            <a
+              key={index}
+              href={item.link}
+              className={`font-semibold ${item.className ?? ""}`}
+            >
               {item.title}
             </a>
           ))}
@@ -76,9 +73,8 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform ${
-            isOpen ? "translate-x-0" : "-translate-x-full"
-          } transition-transform duration-300 ease-in-out z-30`}
+          className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform ${isOpen ? "translate-x-0" : "-translate-x-full"
+            } transition-transform duration-300 ease-in-out z-30`}
         >
           <button className="absolute top-4 right-4" onClick={toggleSidebar}>
             <svg
@@ -97,12 +93,19 @@ const Navbar = () => {
             </svg>
           </button>
           <div className="flex flex-col p-4 mt-8 space-y-4">
-            {items.map((item, index) => (
-              <a key={index} href={item.link} onClick={toggleSidebar}>
-                {item.title}
-              </a>
-            ))}
-          </div>
+  {navItems.map((item, index) => (
+    <a
+      key={index}
+      href={item.link}
+      onClick={toggleSidebar}
+      className={`text-lg font-medium ${item.className ?? ""}`}
+    >
+      {item.title}
+    </a>
+  ))}
+</div>
+
+
         </div>
         {isOpen && (
           <div

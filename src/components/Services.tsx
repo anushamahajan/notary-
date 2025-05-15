@@ -7,68 +7,102 @@ import Heading from "./Heading";
 const Services = () => {
   const items = [
     {
-      title: "Power of Attorney",
+      title: "Acknowledgments",
       description:
-        "A Power of Attorney (POA) grants authority to another person (your agent) to act on your behalf in legal matters, from writing checks to signing documents. We offer General and Special POA options, including Durable POAs for continued authority if you're unable to manage your affairs.",
-      icon: <MdGavel />,
-    },
-    {
-      title: "Home Closings",
-      description:
-        "Ensure smooth real estate transactions with our mobile notary services for home closings. Whether you're busy or out of the area, our team can assist in signing and submitting final contracts, ensuring a hassle-free closing process.",
-      icon: <FaHome />,
-    },
-    {
-      title: "Mobile Notary",
-      description:
-        "With our 24-hour mobile notary services, you can process your legal documents even at the last minute or within the same day. When you're in a rush to get your legal documents or paperwork done, you can rely on the assistance of a mobile notary from our team.",
-      icon: <ImMobile />,
-    },
-    {
-      title: "Weddings",
-      description:
-        "We would be honored to act as your preferred Marriage/Wedding Officiant provider for your ceremony on your big day. We also make the Apostille process for international documents more easy and convenient.",
-      icon: <FaHeart />,
-    },
-    {
-      title: "Apostille Services",
-      description:
-        "When a document is to be used in a foreign country, it may be necessary to have it Apostilled. An Apostille authenticates the origin of the underlying public document. We make the Apostille process for international documents easy and convenient.",
+        "We verify and witness signatures on important documents, confirming the identity of the signer and their willingness to sign without duress.",
       icon: <FaStamp />,
     },
     {
-      title: "Trust / Wills",
+      title: "Signature Witnessing",
       description:
-        "To ensure a deceased person's wishes are met, a validated will, trust, or deed is essential. These documents outline funeral preferences and asset division. Our mobile notaries offer validation services with the convenience of coming to your home or preferred location 24/7.",
+        "We serve as official witnesses to signatures on legal documents, verifying the identity of all signing parties.",
       icon: <FaHandshake />,
     },
-    {},
     {
-      title: "Remote Notarization",
+      title: "Certified Copies",
       description:
-        "We offer remote notarization services for clients who are unable to meet in person. Our remote notaries are certified to conduct online notarizations, ensuring your documents are legally binding and secure. The services are safe and can be completed effortlessly from the comfort of your home.",
-      icon: <FaLaptop  />,
+        "Where permitted by law, we provide certified true copies of original documents, confirming authenticity without altering content.",
+      icon: <FaStamp />,
     },
+    {
+      title: "Power of Attorney",
+      description:
+        "We notarize POA documents that grant someone else authority to act on your behalf in legal, medical, or financial matters.",
+      icon: <MdGavel />,
+    },
+    {
+      title: "Wills, Trusts & Estate",
+      description:
+        "We notarize last wills, living trusts, and estate documents with discretion and accuracy, ensuring clarity in critical decisions.",
+      icon: <FaHome />,
+    },
+    {
+      title: "Weekend Availability",
+      description:
+        "We’re available on weekends to accommodate your urgent or off-hour notarization needs. Just give us a call.",
+      icon: <FaLaptop />,
+    },
+
+    {
+      title: "Parental Consent & School Forms",
+      description:
+        "We notarize school-related and travel consent forms for minors to ensure safety and compliance with legal guidelines.",
+      icon: <FaLaptop />,
+    },
+
+
+    {
+      title: "Medical & Healthcare Forms",
+      description:
+        "From advance directives to healthcare proxies, we ensure your medical documents are properly notarized and legally valid.",
+      icon: <FaHeart />,
+    },
+
+    {
+      title: "Jurats (Oaths & Affirmations)",
+      description:
+        "We administer oaths or affirmations and witness the signing of sworn statements like affidavits, ensuring full legal compliance.",
+      icon: <MdGavel />,
+    },
+    {
+      title: "Business Contracts & Agreements",
+      description:
+        "For freelancers, entrepreneurs, and corporations — we witness and notarize contracts to ensure mutual accountability.",
+      icon: <FaHandshake />,
+    },
+    {
+      title: "Loan & Real Estate Closings",
+      description:
+        "Our mobile notaries handle closings for mortgages, refinances, and deeds — at your location and on your schedule.",
+      icon: <FaHome />,
+    },
+    {
+      title: "Mobile Notary – We Come to You",
+      description:
+        "Whether it's your home, office, or hospital room — we travel to you to notarize documents with ease and flexibility.",
+      icon: <ImMobile />,
+    },
+
   ];
+
   return (
-    <section className="container pt-10 " id="services">
-      <div className="py-6 md:py-10">
-        <Heading title="Mobile Notary Services in Broward & Palm Beach County" />
-        <p className="text-lg ">
-          Our professional mobile notaries are trained to conduct closings to
-          meet each client’s specifications and requirements.
-        </p>
+    <section
+      className="md:px-60 px-6 py-10 bg-cover bg-center bg-no-repeat relative bg-image"
+      id="services"
+    >
+
+      <div className="py-6 md:py-10 " >
+        <Heading title="OUR SERVICES"  className="text-white  md:text-4xl"/>
       </div>
       <div className="grid md:grid-cols-3 gap-8">
         {items.map((item, index) => {
-            if (index === 6) return <div key={index} className="hidden md:block"></div>
           return (
-            <div key={index}>
+            <div key={index} className="bg-navy shadow-lg shadow-black bg-opacity-90 p-8 justify-center items-center md:grid md:text-normal rounded-xl text-sm text-white">
               <div className="flex items-center mb-2 ">
-                <div className="*:w-8 *:h-8 mr-2 text-purple-700">
+                <div className="*:w-8 *:h-8 mr-2 text-white">
                   {item.icon}
                 </div>
-                <h2 className="md:text-3xl text-2xl font-bold text-purple-700 ">
+                <h2 className="md:text-3xl text-2xl font-bold text-white">
                   {item.title}
                 </h2>
               </div>
