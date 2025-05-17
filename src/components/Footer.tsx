@@ -12,9 +12,8 @@ const Footer = () => {
           <div className="md:col-span-2 space-y-2 md:hidden">
             <h2 className="text-lg font-bold  ">About Us</h2>
             <p>
-              Broward & Palm Beach County aims to bring affordable notary
-              services just a phone call away and is backed by 5000+ happy
-              clients that believe in us.
+            Broward Express Notary proudly serves Broward & Palm Beach County, delivering fast, reliable, and affordable mobile notary services—just a phone call away. Built on trust, convenience, and professionalism, we’re here to make notarization seamless and stress-free.
+
             </p>
           </div>
           {/* <div className="md:col-span-3 space-y-2">
