@@ -13,40 +13,41 @@ type Props = {};
 const Testimonials = (props: Props) => {
   const items = [
     {
-      text: "Mr. Kumar was courteous and professional; and he provided excellent service as a Notary. He is willing to come to the location of your choice - which makes his service convenient as well. I highly recommend him as a Notary!",
-      name: "Joan Twersky",
+      text: "Dolly was amazing—she came right to my door late in the evening and handled everything with total professionalism. Highly recommended!",
+      name: "Renee Patterson",
       rating: 5,
     },
     {
-      text: "Great service… I needed documents notarized at short notice at around 10 PM, and this guy got to my house in about 10 minutes and got it all done flawlessly couldn’t have been more happy props to my Guy.",
-      name: "Aiden Hart",
+      text: "Needed a notary urgently and Dolly delivered! She arrived quickly, explained everything clearly, and made the process smooth and stress-free.",
+      name: "Carlos Vega",
       rating: 5,
     },
     {
-      text: "Mr Kumar offers an excellent service at a reasonable price. Great conversation, very pleasant . I will definitely use his services again , recomending to family and friends.",
-      name: "Alexandra Silva",
+      text: "Prompt, polite, and efficient. Dolly made it so easy to get my real estate documents notarized from the comfort of home.",
+      name: "Lamar Jenkins",
       rating: 5,
     },
     {
-      text: "Had a wonderful experience, we were able to meet within literally 15 minutes at 8 PM, he was prompt, efficient, and super affordable! The whole process was really fast! Highly recommend to future clients!",
-      name: "Jessica M",
+      text: "I appreciate Dolly's professionalism and flexibility. She accommodated my tight schedule without hesitation. Great service!",
+      name: "Anita Desai",
       rating: 5,
     },
     {
-      text: "I was in need of a notary asap and he was very quick and on time. Thank you for your service. (10/10). Kumar was very professional and I would recommend him to anyone.",
-      name: "Jasmine Gerome",
+      text: "Highly recommend Broward Express Notary! Dolly was courteous, detail-oriented, and right on time. I’ll be using her again.",
+      name: "George Martin",
       rating: 5,
     },
     {
-      text: "Great notary service! Very reliable and professional. I recommend 100%. Mr. Kumar is really good at what he does!",
-      name: "Brandon Ramsamooj",
+      text: "Excellent mobile notary service. Dolly arrived within 20 minutes, was well-prepared, and very respectful. 10/10 experience.",
+      name: "Maya Robinson",
       rating: 5,
     },
   ];
+  
 
   const swiperRef = useRef<SwiperType>();
   return (
-    <div className="relative py-20 bg-[#100028] container px-11 md:px-20 md:max-w-none" id="testimonials">
+    <div className="relative py-20 bg-navy container px-11 md:px-20 md:max-w-none" id="testimonials">
         <Heading title="What Our Clients Say" className="text-white"/>
       <Swiper
       
@@ -87,7 +88,7 @@ const Testimonials = (props: Props) => {
         })}
       </Swiper>
       <div
-        className="prev absolute top-1/2 md:left-6 left-2 z-10 cursor-pointer text-navy"
+        className="prev absolute top-1/2 md:left-6 left-2 z-10 cursor-pointer text-white"
         onClick={() => {
           swiperRef.current?.slidePrev();
         }}
@@ -95,7 +96,7 @@ const Testimonials = (props: Props) => {
         <FaChevronLeft size={30} />
       </div>
       <div
-        className="next absolute top-1/2 right-2 md:right-6 z-10 cursor-pointer text-navy"
+        className="next absolute top-1/2 right-2 md:right-6 z-10 cursor-pointer text-white"
         onClick={() => {
           swiperRef.current?.slideNext();
         }}

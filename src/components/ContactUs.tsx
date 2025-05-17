@@ -87,7 +87,7 @@ const ContactUs = () => {
           <iframe
             className='md:w-1/2 w-5/6' height="480"
 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.467398351112!2d-80.1405795!3d26.181469699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9022ebf431137%3A0x30d38058dc849403!2sNE%2044th%20St%2C%20Oakland%20Park%2C%20FL%2033334%2C%20USA!5e0!3m2!1sen!2sin!4v1721138092360!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.069565733742!2d-80.1875081!3d26.324246799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d91c78aa82daa9%3A0x92fa286d2f0c880b!2s7531%20NW%2047th%20Ave%2C%20Pompano%20Beach%2C%20FL%2033073%2C%20USA!5e0!3m2!1sen!2sin!4v1747490808648!5m2!1sen!2sin"
           >
           </iframe>
 

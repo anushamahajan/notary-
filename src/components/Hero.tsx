@@ -11,17 +11,17 @@ const mont = Montserrat({ subsets: ["latin"] });
 const Hero = () => {
     const items = [
       {
-        img: "https://images.pexels.com/photos/7979404/pexels-photo-7979404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        img: "https://images.pexels.com/photos/7876053/pexels-photo-7876053.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         title: "TRUSTED NOTARY SOLUTIONS ",
         desc: "At Broward Express Notary, we bring care, clarity, and confidence to your legal paperwork—led by Dolly Garg, a certified notary and passionate advocate for precision and professionalism.",
       },
       {
-        img: "https://images.pexels.com/photos/8111865/pexels-photo-8111865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        img: "https://www.proplogix.com/wp-content/uploads/2021/12/ProperSign-Blog-Featured-Image-A-Short-History-of-Notary-Public-Laws.png",
         title: "WOMAN-LED. COMMUNITY-DRIVEN.",
         desc: "Founded by Dolly Garg, we proudly serve South Florida with mobile notary services that are prompt, discreet, and handled with heart. Legal documents deserve attention—and so do you.",
       },
       {
-        img: "https://images.pexels.com/photos/6476260/pexels-photo-6476260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        img: "https://images.pexels.com/photos/7841454/pexels-photo-7841454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         title: "ON-TIME. ON-SITE. ON YOUR TERMS.",
         desc: "Whether it’s real estate closings, healthcare directives, or school forms—our notary solutions meet you where you are. Weekends, evenings, and emergency slots available.",
       },

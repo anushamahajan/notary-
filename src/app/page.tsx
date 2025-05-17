@@ -24,6 +24,7 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import CountUp from "react-countup";
 import AboutNotary from "@/components/AboutNotary";
+import Timings from "@/components/Timings";
 
 
 const mont = Montserrat({ subsets: ["latin"] });
@@ -44,7 +45,10 @@ export default function Home() {
   return (
     <main className="app-scrollbar">
       <Navbar />
+
       <Hero/>
+      <Timings/>
+    
       <AboutNotary/>
       <Dolly/>
       <RequestCallback/>
@@ -57,33 +61,32 @@ export default function Home() {
       {/* <ServiceGuidelines /> */}
       {/* <Commonly /> */}
       <section className="py-16 px-4">
-        <div className="container mx-auto md:text-center">
-          <Heading title="Our Numbers Speak"/>
+  <div className="container mx-auto md:text-center">
+    <Heading title="Why Clients Choose Us" />
 
-          <p className="text-lg md:text-xl mb-8">
-            Serving Broward & Palm Beach County, we set the industry benchmark
-            by offering affordable notary services right at your doorstep. Join
-            the community of over 5000 satisfied clients who trust us.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-white text-center">
-            <div className="text-navy font-bold rounded-lg shadow-lg p-6">
-            <CountUp end={2000} enableScrollSpy={true} useGrouping={false} suffix="+" className="text-4xl md:text-6xl  mb-2" />
-              <p className="text-2xl md:text-xl">Satisfied Clients</p>
-            </div>
+    <p className=" mb-8">
+      At Broward Express Notary, we’re setting new standards in convenience and reliability for Broward & Palm Beach County. Fast response, mobile service, and unmatched flexibility—right at your doorstep.
+    </p>
 
-            <div className="text-navy font-bold rounded-lg shadow-lg p-6">
-            <CountUp end={95} enableScrollSpy={true} suffix="%" className="text-4xl md:text-6xl  mb-2" />
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-white text-center">
+      <div className="text-navy font-bold rounded-lg shadow-lg p-6">
+        <CountUp end={100} enableScrollSpy={true} suffix="%" className="text-4xl md:text-5xl mb-2" />
+        <p className="text-2xl md:text-xl">Mobile Convenience</p>
+      </div>
 
-              <p className="text-2xl md:text-xl">Repeat Customers</p>
-            </div>
+      <div className="text-navy font-bold rounded-lg shadow-lg p-6">
+        <CountUp end={24} enableScrollSpy={true} suffix="/7" className="text-4xl md:text-5xl mb-2" />
+        <p className="text-2xl md:text-xl">Service Availability</p>
+      </div>
 
-            <div className="text-navy rounded-lg font-bold shadow-lg p-6">
-            <CountUp end={2015} enableScrollSpy={true} useGrouping={false} className="text-4xl md:text-6xl  mb-2" />
-              <p className="text-2xl md:text-xl">Industry Experience</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="text-navy font-bold rounded-lg shadow-lg p-6">
+        <CountUp end={100} enableScrollSpy={true} suffix="%" className="text-5xl md:text-6xl mb-2" />
+        <p className="text-2xl md:text-xl">Transparent Pricing</p>
+      </div>
+    </div>
+  </div>
+</section>
+
       <WhyUs />
       <Sliderss />
       <Testimonials/>

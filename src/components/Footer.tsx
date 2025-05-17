@@ -17,7 +17,7 @@ const Footer = () => {
               clients that believe in us.
             </p>
           </div>
-          <div className="md:col-span-3 space-y-2">
+          {/* <div className="md:col-span-3 space-y-2">
             <div className="text-lg font-bold md:text-center">Certificates</div>
             <div className="grid-cols-3 grid gap-3 md:px-7">
               <a href="/cert1.png">
@@ -30,7 +30,7 @@ const Footer = () => {
                 <img src="cert3.png" alt="Certificate 3" className="" />
               </a>
             </div>
-          </div>
+          </div> */}
           <div className="col-span-2 flex items-center">
             <img src="/cards.jpg" alt="" />
           </div>
@@ -64,14 +64,14 @@ const Footer = () => {
             <h2 className="text-lg font-bold ">Get in Touch</h2>
             <ul className="text-sm space-y-1">
               <li>
-                <span className="font-semibold">Phone :</span> (954) 448-8542
+                <span className="font-semibold">Phone :</span> (954) 319-5224
               </li>
               <li>
                 <span className="font-semibold">Email :</span>{" "}
-                notaryquote@gmail.com
+                browardexpressnotary@gmail.com
               </li>
               <li>
-                <span className="font-semibold">Address :</span> 502 NE 44th St. Oakland Park FL 33334
+                <span className="font-semibold">Address :</span> 7531 NW 47th Ave Coconut Creek Florida
               </li>
             </ul>
           </div>

@@ -87,7 +87,7 @@ const Services = () => {
 
   return (
     <section
-      className="md:px-60 px-6 py-10 bg-cover bg-center bg-no-repeat relative bg-image"
+      className="md:px-32 px-6 py-10 bg-cover bg-center bg-no-repeat relative bg-image"
       id="services"
     >
 
@@ -102,7 +102,7 @@ const Services = () => {
                 <div className="*:w-8 *:h-8 mr-2 text-white">
                   {item.icon}
                 </div>
-                <h2 className="md:text-3xl text-2xl font-bold text-white">
+                <h2 className="md:text-2xl text-2xl font-bold text-white">
                   {item.title}
                 </h2>
               </div>

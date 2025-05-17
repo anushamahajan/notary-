@@ -15,9 +15,9 @@ const Navbar = () => {
     { title: "Why Us?", link: "#whyus" },
     { title: "Testimonials", link: "#testimonials" },
     {
-      title: "Reach Out Now",
+      title: "Contact Us",
       link: "#contactus",
-      className: "bg-sky-700 text-white rounded-2xl px-6 py-4",
+      className: "bg-sky-700 text-white rounded-2xl px-6 py-2",
     },
   ];
 
@@ -25,25 +25,26 @@ const Navbar = () => {
   return (
     <nav className="absolute bg-white z-20 border-b border-gray-600  text-xl w-full">
       <div className="bg-navy font-semibold py-2.5 w-full px-5 text-xs text-white text-center md:text-left">
+        <span className="px-2"> By Appointments Only </span>
         <PhoneIcon
           className="inline mr-1 text-white stroke-[2px]"
           size={15}
         />{" "}
-        <Link href={"tel:+1 (954) 448-8542"} className=" text-white">
-          +1 (954) 448-8542
+        <Link href={"tel:+1 (954) 319 5224"} className=" text-white">
+          +1 (954) 319 5224
         </Link>
         {""}{" "}
         <HomeIcon
           className="inline ml-3 mr-1 text-white stroke-[2px]"
           size={15}
         />{" "}
-        502 NE 44th St. Oakland Park FL 33334{" "}
+        7531 NW 47th Ave Coconut Creek Florida{" "}
       </div>
       <div className="flex items-center justify-between py-1 px-8">
         <div>
-          <img src="./logo4.jpg" alt="" className="md:h-24 h-16" />
+          <img src="./logo4.jpg" alt="" className="w-16 h-16" />
         </div>
-        <div className="hidden md:flex h-full justify-end items-center gap-10 text-xl uppercase">
+        <div className="hidden md:flex h-full justify-end items-center gap-10 text-sm uppercase">
           {navItems.map((item, index) => (
             <a
               key={index}
@@ -98,7 +99,7 @@ const Navbar = () => {
       key={index}
       href={item.link}
       onClick={toggleSidebar}
-      className={`text-lg font-medium ${item.className ?? ""}`}
+      className={`font-medium ${item.className ?? ""}`}
     >
       {item.title}
     </a>

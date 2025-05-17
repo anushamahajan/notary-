@@ -4,18 +4,18 @@ import Image from 'next/image'
 
 export default function AboutUsSection() {
   return (
-    <section className="container mx-auto md:py-16 md:px-20 py-10 px-10">
-      <div className="flex flex-col md:flex-row md:gap-28 items-center gap-12">
+    <section className="container mx-auto md:py-16 md:px-40 py-10 px-10">
+      <div className="flex flex-col md:flex-row md:gap-28 items-center">
         {/* Left side: Image with gold rectangle */}
         <div className="relative w-full md:w-1/2">
-          <div className="absolute bg-gold md:w-[80%] md:h-[95%] md:bottom-[-50px] md:left-[-60px] z-0" />
-          <div className="relative z-10 md:border-0 border-10 border-gold">
+          
+          <div className="relative z-10 md:border-40 border-20 border-navy">
             <Image
-              src="/aboutnotary.jpg" // update this to your real image
+              src="/aboutnotary.png" // update this to your real image
               alt="Notary at work"
-              width={500}
-              height={250}
-              className="object-cover"
+              width={600}
+              height={400}
+              className="object-cover border md:border-10 border-navy"
             />
           </div>
         </div>
@@ -35,7 +35,7 @@ export default function AboutUsSection() {
             Whether it’s a healthcare form, real estate closing, or legal affidavit — we come to you, on your time, with complete confidentiality.
           </p>
           <a 
-            href="/services" 
+            href="#services" 
             className="inline-block uppercase tracking-wider border-2 border-[#a08852] text-[#a08852] py-2 px-4 font-medium hover:bg-[#a08852] hover:text-white transition-colors"
           >
             DISCOVER OUR SERVICES
