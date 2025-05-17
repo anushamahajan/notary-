@@ -42,7 +42,7 @@ const Navbar = () => {
       </div>
       <div className="flex items-center justify-between py-1 px-8">
         <div>
-          <img src="./logo4.jpg" alt="" className="w-16 h-16" />
+          <img src="./logo4.jpg" alt="" className="w-24 h-24" />
         </div>
         <div className="hidden md:flex h-full justify-end items-center gap-10 text-sm uppercase">
           {navItems.map((item, index) => (
