@@ -26,7 +26,7 @@ const RequestDialog = ({ open, setOpen }: Props) => {
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     await emailjs
-      .send("service_0yf8rp9", "template_mczi8id", {
+      .send("service_0yf8rp9", "template_f7634hg", {
         name: name,
         mobile: mobile,
         from : "Broward Express Notary",

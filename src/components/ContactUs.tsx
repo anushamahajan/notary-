@@ -15,7 +15,7 @@ const ContactUs = () => {
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     await emailjs
-      .send("service_0yf8rp9", "template_f7634hg", {
+      .send("service_0yf8rp9", "template_mczi8id", {
         name: name,
         mobile: phone,
         from : "Broward Express Notary",
