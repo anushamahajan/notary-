@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -7,7 +8,9 @@ const Footer = () => {
         {/* <div className="text-center md:text-right text-sm flex justify-center montserrat">
           <p>We are not a law firm. We do not make any legal advice.</p>
         </div> */}
-        <img src="./QR.png" className="h-50 w-40 mx-auto py-4 "></img>
+        <Link href="https://enroll.zellepay.com/qr-codes?data=eyJuYW1lIjoiR0FSRydTIFBST0ZFU1NJT05BTCBTRVJWSUNFUyBMTEMiLCJhY3Rpb24iOiJwYXltZW50IiwidG9rZW4iOiJicm93YXJkZXhwcmVzc25vdGFyeUBnbWFpbC5jb20ifQ==">
+        <img src="./QR.png" className="h-50 w-40 mx-auto py-4 "/>
+        </Link>
 
         <div className="md:grid md:grid-cols-8 text-left md:gap-10 space-y-7 md:space-y-0 justify-center container mb-10 md:mb-0">
           
