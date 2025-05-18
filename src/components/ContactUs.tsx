@@ -11,14 +11,14 @@ const ContactUs = () => {
   const [phone, setPhone] = React.useState('');
   const [message, setMessage] = React.useState('');
 
-  useEffect(() => emailjs.init("n98FMVTpQ5jgJ6ya6"), []);
+  useEffect(() => emailjs.init("l6TrX5WwhRPAKoCMV"), []);
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     await emailjs
-      .send("service_13xmfel", "template_efxkuwo", {
+      .send("service_0yf8rp9", "template_f7634hg", {
         name: name,
         mobile: phone,
-        from : "Notary Website",
+        from : "Broward Express Notary",
         message : message,
       })
       .then(

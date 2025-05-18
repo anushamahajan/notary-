@@ -3,19 +3,14 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-navy text-white pt-8 pb-3 ">
-      <div className="container mx-auto">
+      <div className="container mx-auto md:flex ">
         {/* <div className="text-center md:text-right text-sm flex justify-center montserrat">
           <p>We are not a law firm. We do not make any legal advice.</p>
         </div> */}
+        <img src="./QR.png" className="h-50 w-40 mx-auto py-4 "></img>
 
         <div className="md:grid md:grid-cols-8 text-left md:gap-10 space-y-7 md:space-y-0 justify-center container mb-10 md:mb-0">
-          <div className="md:col-span-2 space-y-2 md:hidden">
-            <h2 className="text-lg font-bold  ">About Us</h2>
-            <p>
-            Broward Express Notary proudly serves Broward & Palm Beach County, delivering fast, reliable, and affordable mobile notary services—just a phone call away. Built on trust, convenience, and professionalism, we’re here to make notarization seamless and stress-free.
-
-            </p>
-          </div>
+          
           {/* <div className="md:col-span-3 space-y-2">
             <div className="text-lg font-bold md:text-center">Certificates</div>
             <div className="grid-cols-3 grid gap-3 md:px-7">
@@ -66,7 +61,7 @@ const Footer = () => {
                 <span className="font-semibold">Phone :</span> (954) 319-5224
               </li>
               <li>
-                <span className="font-semibold">Email :</span>{" "}
+                <span className="font-semibold">Zelle Email :</span>{" "}
                 browardexpressnotary@gmail.com
               </li>
               <li>

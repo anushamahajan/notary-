@@ -22,14 +22,14 @@ const RequestDialog = ({ open, setOpen }: Props) => {
   const [name, setName] = React.useState("");
   const [mobile, setMobile] = React.useState("");
   const [email, setEmail] = React.useState("");
-  useEffect(() => emailjs.init("n98FMVTpQ5jgJ6ya6"), []);
+  useEffect(() => emailjs.init("l6TrX5WwhRPAKoCMV"), []);
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     await emailjs
-      .send("service_13xmfel", "template_u9s253e", {
+      .send("service_0yf8rp9", "template_mczi8id", {
         name: name,
         mobile: mobile,
-        from : "Notary Website",
+        from : "Broward Express Notary",
         email: email,
       })
       .then(
