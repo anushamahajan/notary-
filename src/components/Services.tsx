@@ -36,12 +36,7 @@ const Services = () => {
         "We notarize last wills, living trusts, and estate documents with discretion and accuracy, ensuring clarity in critical decisions.",
       icon: <FaHome />,
     },
-    {
-      title: "Weekend Availability",
-      description:
-        "We’re available on weekends to accommodate your urgent or off-hour notarization needs. Just give us a call.",
-      icon: <FaLaptop />,
-    },
+
 
     {
       title: "Parental Consent & School Forms",
@@ -82,6 +77,12 @@ const Services = () => {
         "Whether it's your home, office, or hospital room — we travel to you to notarize documents with ease and flexibility.",
       icon: <ImMobile />,
     },
+    {
+      title: "Weekend Availability",
+      description:
+        "We’re available on weekends to accommodate your urgent or off-hour notarization needs. Just give us a call.",
+      icon: <FaLaptop />,
+    },
 
   ];
 
@@ -92,7 +93,7 @@ const Services = () => {
     >
 
       <div className="py-6 md:py-10 " >
-        <Heading title="OUR SERVICES"  className="text-white  md:text-4xl"/>
+        <Heading title="OUR SERVICES" className="text-white  md:text-4xl" />
       </div>
       <div className="grid md:grid-cols-3 gap-8">
         {items.map((item, index) => {
