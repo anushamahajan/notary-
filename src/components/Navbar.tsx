@@ -30,15 +30,15 @@ const Navbar = () => {
           className="inline mr-1 text-white stroke-[2px]"
           size={15}
         />{" "}
-        <Link href={"tel:+1 (954) 319 5224"} className=" text-white">
-          +1 (954) 319 5224
+        <Link href={"tel:+1 (954)319-5224"} className=" text-white">
+          +1 (954)319-5224
         </Link>
         {""}{" "}
         <HomeIcon
           className="inline ml-3 mr-1 text-white stroke-[2px]"
           size={15}
         />{" "}
-        7531 NW 47th Ave Coconut Creek Florida{" "}
+        7531 NW 47th Ave., Coconut Creek, FL. 33073{" "}
       </div>
       <div className="flex items-center justify-between py-1 px-8">
         <div>

@@ -61,14 +61,14 @@ const Footer = () => {
             <h2 className="text-lg font-bold ">Get in Touch</h2>
             <ul className="text-sm space-y-1">
               <li>
-                <span className="font-semibold">Phone :</span> (954) 319-5224
+                <span className="font-semibold">Phone :</span>+1 (954)319-5224
               </li>
               <li>
                 <span className="font-semibold">Zelle Email :</span>{" "}
                 browardexpressnotary@gmail.com
               </li>
               <li>
-                <span className="font-semibold">Address :</span> 7531 NW 47th Ave Coconut Creek Florida
+                <span className="font-semibold">Address :</span> 7531 NW 47th Ave., Coconut Creek, FL. 33073
               </li>
             </ul>
           </div>

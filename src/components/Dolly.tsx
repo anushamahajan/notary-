@@ -26,7 +26,7 @@ export default function Dolly() {
                         
                         <div className='my-2 font-bold md:text-xl text-sm '>
                             <PhoneIcon className=" inline mr-4" />
-                            954-319-5224</div>
+                            +1 (954)-319-5224</div>
                         <div className='md:text-xl text-sm font-bold '>
                             <MailIcon className="inline mr-3" />
                             browardexpressnotary@gmail.com</div>
@@ -37,12 +37,12 @@ export default function Dolly() {
 
                     {/* Right side - Image */}
                     <div className="flex items-end justify-end my-10">
-                        <div className="relative w-full md:w-[400px] h-[500px] border-4 border-white">
+                        <div className="relative w-full md:w-[400px] h-[500px]">
                             <Image
-                                src="/cb.png"
+                                src="/cb.jpg"
                                 alt="Dolly Garg"
                                 fill
-                                className="object-cover"
+                                className="object-cover rounded-full aspect-square object-top border-4 border-white"
                             />
                         </div>
                     </div>
