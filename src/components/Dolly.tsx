@@ -37,12 +37,12 @@ export default function Dolly() {
 
                     {/* Right side - Image */}
                     <div className="flex items-end justify-end my-10">
-                        <div className="relative w-full md:w-[400px] h-[500px]">
+                        <div className="relative w-full md:w-[400px] md:h-[500px] h-[400px] ">
                             <Image
                                 src="/cb.jpg"
                                 alt="Dolly Garg"
                                 fill
-                                className="object-cover rounded-full aspect-square object-top border-4 border-white"
+                                className="object-cover md:rounded-full md:aspect-square object-top rounded-full aspect square border-4 border-white"
                             />
                         </div>
                     </div>

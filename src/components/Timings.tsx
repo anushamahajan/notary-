@@ -5,7 +5,7 @@ const AppointmentNotice = () => {
   return (
     <section className="bg-navy py-10 px-6 shadow-md  mx-auto">
       <div className="text-center mb-6 text-white">
-        <h2 className="text-2xl md:text-6xl font-bold mb-2">By Appointment Only</h2>
+        <h2 className="text-2xl md:text-6xl font-bold mb-2">By Appointments Only</h2>
         <p className="text-lg">
           Please call and schedule an appointment before visiting.
         </p>
