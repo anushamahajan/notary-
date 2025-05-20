@@ -38,7 +38,7 @@ const Navbar = () => {
           className="inline ml-3 mr-1 text-white stroke-[2px]"
           size={15}
         />{" "}
-        7531 NW 47th Ave., Coconut Creek, FL. 33073{" "}
+        Serving Coconut Creek, Boca Raton, Parkland, Coral Springs, Deerfield Beach and nearby areas.{" "}
       </div>
       <div className="flex items-center justify-between py-1 px-8">
         <div>

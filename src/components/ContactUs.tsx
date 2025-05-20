@@ -87,7 +87,7 @@ const ContactUs = () => {
           <iframe
             className='md:w-1/2 w-5/6' height="480"
 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.069565733742!2d-80.1875081!3d26.324246799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d91c78aa82daa9%3A0x92fa286d2f0c880b!2s7531%20NW%2047th%20Ave%2C%20Pompano%20Beach%2C%20FL%2033073%2C%20USA!5e0!3m2!1sen!2sin!4v1747490808648!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94362.12232169535!2d-80.26718449514668!3d26.271047932066704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d90354fdbff275%3A0x1c68fad7427252c3!2sCoconut%20Creek%2C%20FL%2C%20USA!5e1!3m2!1sen!2sin!4v1747750820549!5m2!1sen!2sin"
           >
           </iframe>
 

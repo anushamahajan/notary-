@@ -68,7 +68,7 @@ const Footer = () => {
                 browardexpressnotary@gmail.com
               </li>
               <li>
-                <span className="font-semibold">Address :</span> 7531 NW 47th Ave., Coconut Creek, FL. 33073
+                <span className="font-semibold">Address :</span> Serving Coconut Creek, Boca Raton, Parkland, Coral Springs, Deerfield Beach and surrounding areas.
               </li>
             </ul>
           </div>
