@@ -11,20 +11,13 @@ const AppointmentNotice = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center max-w-3xl mx-auto">
+      <div className="grid grid-cols-1 gap-6 text-center max-w-lg mx-auto">
         <div className="bg-white p-6 rounded-md shadow">
           <FaClock className="mx-auto text-6xl mb-2" />
-          <h3 className="text-xl font-semibold mb-1">Weekdays</h3>
-          <p className="text-base">4:00 AM – 7:00 PM</p>
-        </div>
-
-        <div className="bg-white  p-6 rounded-md shadow">
-          <FaClock className="mx-auto text-6xl mb-2" />
-          <h3 className="text-xl font-semibold mb-1">Weekends</h3>
-          <p className="text-base">9:00 AM – 5:00 PM</p>
+          <h3 className="text-3xl font-semibold mb-1">Everyday</h3>
+          <p className="text-lg">8:00 AM – 7:00 PM</p>
         </div>
       </div>
-
     </section>
   );
 };
